@@ -1,0 +1,14 @@
+# CUDA 11.1
+# pyiqa
+# mmcv-full==1.6.2
+tqdm
+seaborn
+scikit-image
+adamp
+opencv-python
+pytorch-msssim
+timm
+tensorboard
+tensorboardx
+matplotlib
+
