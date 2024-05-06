@@ -1,6 +1,6 @@
 # CUDA 11.1
-# pyiqa
-# mmcv-full==1.6.2
+pyiqa
+mmcv-full==1.6.2
 tqdm
 seaborn
 scikit-image
