@@ -15,10 +15,67 @@ We test the code on PyTorch 1.13.1 + CUDA 11.6
 
    
 
-2. 
+2. Install dependencies
 
-<<<<<<< HEAD
+```
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 -c pytorch
+pip install -r requirements.txt
+```
+
+### Download
+
+You can download the pretrained models and datasets on  [BaiduPan]( ) (It is none).
+
+The final file path should be the same as the following:
+
+```
+┬─ Semi-UIE
+    ├─ model
+    │   ├─ ckpt
+  	│ 	│ 	└─ best_in_NR.pth
+    │   └─ log
+    |
+	├─ data
+    	├─ UIEBD
+    	│   ├─ Labeled
+    	│   │   ├─ GT
+    	│   │   │   └─ ... (image filename)
+    	|	|	├─ input
+    	│   │   │   └─ ... (image filename)
+   		│   │   └─ LA
+    	│   │   │   └─ ... (image filename)
+    	│   ├─ unlabeled
+    	│   │   ├─ condidate
+    	│   │   │   └─ ... (image filename)
+    	|	|	├─ input
+    	│   │   │   └─ ... (image filename)
+   		│   │   └─ LA
+    	│   │   │   └─ ... (image filename)
+    	│   └─ val
+    	│   │   ├─ GT
+    	│   │   │   └─ ... (image filename)
+    	|	|	├─ input
+    	│   │   │   └─ ... (image filename)
+   		│   │   └─ LA
+    	│   │   │   └─ ... (image filename)
+    	└─ ... (dataset name)
+```
+
+
+
+## Train
+
+```
+python train.py
+```
+
+## Test
+
+```
+python test.py
+```
+
+
+
 The code of this paper has not been sorted out yet. The team will sort out the code and publish it soon.
 =======
-The code of this paper has not been sorted out yet. The team will sort out the code and publish it soon.
->>>>>>> 925236de10e96e9dea81c9c04d5080c1ed160131
