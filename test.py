@@ -4,7 +4,7 @@ import torch.nn as nn
 from torch.autograd import Variable
 import torch.utils.data as data
 import numpy as np
-from UIE14_agg4_no_prior import *
+from UIE14_agg4 import *
 from PIL import Image
 from adamp import AdamP
 # my import
@@ -12,7 +12,7 @@ from adamp import AdamP
 from dataset_all import TestData
 # from LACC_pyotrch import LACC_pytorch_optimized as reLACC
 import pyiqa
-from LACC import LACC
+# from LACC import LACC
 
 def normalize_img(img):
     if torch.max(img) > 1 or torch.min(img) < 0:
@@ -41,11 +41,11 @@ bz = 1
 # model_root = './model/ckpt/best_p_model.pth'
 # model_root = './model/ckpt/best_M_model.pth'
 # model_root = './model/ckpt/best_p_model_24.63_56.41.pth'
-model_root = './model/ckpt/best_in_NR.pth'
+model_root = './model/ckpt/2.22/best_in_NR.pth'
 # model_root = './pretrained/model.pth'
 # input_root = './data/UIEBD2/val'
 input_root = './data/UIEBD2/val'
-save_path = './result3.13/UIEBD'
+save_path = './result/UIEBD'
 if not os.path.isdir(save_path):
     os.makedirs(save_path)
 checkpoint = torch.load(model_root)

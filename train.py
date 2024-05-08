@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 # my import
 from dataset_all import TrainLabeled, TrainUnlabeled, ValLabeled
-from UIE14_agg4_no_prior import *
+from UIE14_agg4 import *
 # from UIE2 import *
 # from Cross.dehazeformer import *
 # from model import *

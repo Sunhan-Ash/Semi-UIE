@@ -11,9 +11,9 @@ from deform_conv import DCN_layer
 import torch.fft as fft
 import cv2
 from LACC_pyotrch import LACC_pytorch_optimized as LACC
-from white_balance import white_balance
-from pre_process1 import histogram_equalization_pytorch
-from pre_process2 import clahe_batch
+# from white_balance import white_balance
+# from pre_process1 import histogram_equalization_pytorch
+# from pre_process2 import clahe_batch
 class Pooling(nn.Module):
     """
     Implementation of pooling for PoolFormer
@@ -334,10 +334,10 @@ class BasicLayer_grad(nn.Module):
                              mlp_ratio=mlp_ratio,
                              norm_layer=norm_layer,                       
                              use_attn=1 / 4 , conv_type=conv_type)
-        self.conv_cat = conv_layer(dim * 2, dim, kernel_size=1, bias=True)
+        self.conv_cat = conv_layer(dim * 3, dim, kernel_size=1, bias=True)
 
     def forward(self, x , x_grad , x_la):
-        # x = self.conv_cat(torch.concat([x,x_grad],1))
+        x = self.conv_cat(torch.concat([x,x_grad,x_la],1))
         x = self.block(x)
         return x
 
@@ -537,12 +537,11 @@ class UIE_Sec(nn.Module):
         x_grad = self.conv_in(x_grad)
         la = self.conv_in(la)
         x_org = x
-        # x = LACC(x)
+        x = LACC(x)
         # x = white_balance(x)
         # x = histogram_equalization_pytorch(x)
         # x = clahe_batch(x)
-        # x = self.reLACC(x) 
-        
+        # x = torch.concat([x_org,x],1)
         x = self.patch_embed(x)
 
         x = self.layer_1(x)

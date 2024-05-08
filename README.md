@@ -26,9 +26,7 @@ pip install -r requirements.txt
 
 You can download the pretrained models on [BaiduPan](https://pan.baidu.com/s/1RaOnqsu5ssqtb_VCLirVxw? ) (stxh)
 
-and datasets on  [BaiduPan](https://pan.baidu.com/s/1xrJOg0JfgiDJJGYML5G2rg?)(5pvq)
-
-Because the consent of the LACC author was not obtained, this paper cannot open source it. However, good results can be obtained by removing this module. We provide this version of the pre-trained model.
+and datasets on  [BaiduPan](https://pan.baidu.com/s/1xrJOg0JfgiDJJGYML5G2rg?)(5pvq). Because the consent of the LACC author was not obtained, this paper cannot open source it. However, good results can be obtained by removing this module. We provide this version of the pre-trained model.
 
 The final file path should be the same as the following:
 

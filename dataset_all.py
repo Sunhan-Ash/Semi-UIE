@@ -10,12 +10,12 @@ IMG_EXTENSIONS = [
     '.jpg', '.JPG', '.jpeg', '.JPEG',
     '.png', '.PNG', '.ppm', '.PPM', '.bmp', '.BMP',
 ]
-from LACC import LACC
+# from LACC import LACC
 from trainer import normalize_img
-def reLACC(x):
-    with torch.no_grad():
-        x = LACC(x)
-        x = normalize_img(x)
+# def reLACC(x):
+#     with torch.no_grad():
+#         x = LACC(x)
+#         x = normalize_img(x)
 
 def is_image_file(filename):
     return any(filename.endswith(extension) for extension in IMG_EXTENSIONS)
