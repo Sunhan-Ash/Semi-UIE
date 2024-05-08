@@ -35,7 +35,7 @@ The final file path should be the same as the following:
 ┬─ Semi-UIE
     ├─ model
     │   ├─ ckpt
-  	│ 	│ 	└─ best_in_NR.pth
+    │ 	│   └─ best_in_NR.pth
     │   └─ log
     |
 	├─ data
@@ -43,23 +43,23 @@ The final file path should be the same as the following:
     	│   ├─ Labeled
     	│   │   ├─ GT
     	│   │   │   └─ ... (image filename)
-    	|	|	├─ input
+    	|   |   ├─ input
     	│   │   │   └─ ... (image filename)
-   		│   │   └─ LA
+   	│   │   └─ LA
     	│   │   │   └─ ... (image filename)
     	│   ├─ unlabeled
     	│   │   ├─ condidate
     	│   │   │   └─ ... (image filename)
-    	|	|	├─ input
+    	|   |   ├─ input
     	│   │   │   └─ ... (image filename)
-   		│   │   └─ LA
+   	│   │   └─ LA
     	│   │   │   └─ ... (image filename)
     	│   └─ val
     	│   │   ├─ GT
     	│   │   │   └─ ... (image filename)
-    	|	|	├─ input
+    	|   |   ├─ input
     	│   │   │   └─ ... (image filename)
-   		│   │   └─ LA
+   	│   │   └─ LA
     	│   │   │   └─ ... (image filename)
     	└─ ... (dataset name)
 ```
