@@ -10,7 +10,7 @@ from timm.models.layers import to_2tuple,trunc_normal_,DropPath
 from deform_conv import DCN_layer
 import torch.fft as fft
 import cv2
-from LACC_pyotrch import LACC_pytorch_optimized as LACC
+from LACC_pytorch import LACC_pytorch_optimized as LACC
 # from white_balance import white_balance
 # from pre_process1 import histogram_equalization_pytorch
 # from pre_process2 import clahe_batch
@@ -607,4 +607,4 @@ if __name__ == "__main__":
     x = torch.ones([1, 3, 366, 485])
     x1 = torch.ones([1, 3, 366, 485])
     y = model(x, x1)
-    # print('model params: %d' % count_parameters(model))
+    print('model params: %d' % count_parameters(model))
