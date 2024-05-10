@@ -12,11 +12,11 @@ from torch.autograd import Variable
 from adamp import AdamP
 from torchvision.models import vgg16
 from loss.losses import *
-from model import GetGradientNopadding
+#from model import GetGradientNopadding
 from loss.contrast import ContrastLoss
 import pyiqa
 from torch.nn.utils import clip_grad_norm_
-from LACC_pyotrch import LACC_pytorch_optimized as reLACC
+#from LACC_pyotrch import LACC_pytorch_optimized as reLACC
 @torch.no_grad()
 def normalize_img(img):
     if torch.max(img) > 1 or torch.min(img) < 0:
