@@ -25,10 +25,7 @@ pip install -r requirements.txt
 ### Download
 
 You can download the pretrained models on [BaiduPan](https://pan.baidu.com/s/1008_cJKSY0EGkOnRv1osBA?pwd=7mrv 
- ) (7mrv )
-
-and datasets on  [BaiduPan](https://pan.baidu.com/s/1xrJOg0JfgiDJJGYML5G2rg?)(5pvq)
-and the result of paper on [BaiduPan](链接: https://pan.baidu.com/s/13Yh37pVlY7j1QZHPqk8Gwg?)(j6au)
+ ) (7mrv ) and datasets on  [BaiduPan](https://pan.baidu.com/s/1xrJOg0JfgiDJJGYML5G2rg?)(5pvq).
 
 The final file path should be the same as the following:
 
@@ -84,7 +81,7 @@ python test.py
 
 The various indicators mentioned in the paper are MUSIQ, URanker, UIQM, and UCIQE. For MUSIQ and URanker, please confirm the file path and then use the 'evaluation.py' file to calculate. For UIQM and UCIQE, please use matlab to call the 'UIQM' folder. Compute.m is used for calculation. compute.m will generate a csv file. To avoid trouble, please calculate MUSIQ and URanker first.There may be slight differences in the calculation results, but they are generally similar.
 
-If you only need the results of this paper, please use [BaiduPan](链接: https://pan.baidu.com/s/13Yh37pVlY7j1QZHPqk8Gwg?)(j6au) to download the results
+If you only need the results of this paper, please use [BaiduPan](https://pan.baidu.com/s/13Yh37pVlY7j1QZHPqk8Gwg?)(j6au) to download the results
 
 ## Acknowledgement
 
